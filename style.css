@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    background-color: rgb(133, 35, 153);
+    
+}
+
+.logo img{
+   width: 35%;
+
+}
+
+.logo{
+    text-align: center;
+    padding: 20px 0px 20px 0px; 
+    /* top right bottom left */
+}
+
+.title{
+    color: white;
+    font-size: 15px;
+    padding: 20px 0px;
+}
+
+.grade-wrapper{
+    width: 70%;
+    margin: auto;
+    padding: 6px;
+   
+}
+
+.allgrades{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grades{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.grade-detail{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.grade-detail h2{
+    cursor: pointer;
+}
+
+.grade-detail h2:hover{
+    transform: scale(1.20);
+    transition: 0.3s ease;
+}
+
+.grade-detail img{
+    height: 15%;
+    width: 15%;
+}
+
+.gametitle{
+    display: flex;
+    padding: 30px 0px;
+    color: white;
+    font-size: 15px;
+}
+.gamecard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card img{
+    width: 75%;
+    cursor: pointer;
+
+}
+
+.card img:hover{
+    transform: scale(1.09);
+    transition: 0.3s ease;
+}
+/* footer */
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer12{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.wrapperfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer1 img{
+    height: 25%;
+    width: 25%;
+}
+
+.footer1 h2{
+    color: white;
+    font-size: 15px;
+}
+
+.footer1 p{
+    color: white;
+    font-size: 12px;
+}
+.footer12 h2{
+    color: white;
+    font-size: 15px;
+}
+
+.footer12 p{
+    color: white;
+    font-size: 12px;
+}
+
+
+.footer12 img{
+    height: 15%;
+    width: 15%;
+}
+
+.button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.button button{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button img{
+    height: 30%;
+    width: 30%;
+    background-color: white;
+}
+
+
+h3{
+    color: rgb(54, 52, 52);
+    font-size: 18px;
+}
+
+h2{
+    color: white;
+    font-size: 12px;
+}
+
+
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+    height: auto;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}

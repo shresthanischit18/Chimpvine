@@ -1,12 +1,15 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slider img');
-const intervalTime = 3000; // Change slides every 3 seconds
+const paginationButtons = document.querySelectorAll('.pagination-btn');
+const intervalTime = 5000; 
 
 function showSlide(index) {
     if (index < 0) {
         currentSlide = slides.length - 1;
     } else if (index >= slides.length) {
         currentSlide = 0;
+    } else {
+        currentSlide = index;
     }
 
     slides.forEach((slide, i) => {
@@ -16,6 +19,18 @@ function showSlide(index) {
             slide.style.display = 'none';
         }
     });
+
+    paginationButtons.forEach((button, i) => {
+        if (i === currentSlide) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+}
+
+function goToSlide(index) {
+    showSlide(index);
 }
 
 function prevSlide() {
@@ -30,8 +45,7 @@ function autoSlide() {
     nextSlide();
 }
 
-// Show the initial slide
 showSlide(currentSlide);
+paginationButtons[0].classList.add('active');
 
-// Start automatic slide change
 setInterval(autoSlide, intervalTime);

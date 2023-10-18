@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games G1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <!--topic-->
+    <div class="gamesg1">
+        <h1>Games</h1>
+    </div>
+
+    <div class="gamesdetail">
+        <h2 id="grade"></h2>
+        <h2 id="title"></h2>
+        
+    </div>
+    
+    <div class="allgames">
+        <hr class="line" />
+        <br>
+        <br>
+        <div class="gamecard">
+            <div class="card">
+              <img src="img/Arth.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/drag.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/The Alien Bird.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/Mono Jump Grade-5 Maths.png" alt="" />
+            </div>
+          </div>
+          <br>
+          <div class="gamecard">
+            <div class="card">
+              <img src="img/Arth.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/drag.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/The Alien Bird.png" alt="" />
+            </div>
+            <div class="card">
+              <img src="img/Mono Jump Grade-5 Maths.png" alt="" />
+            </div>
+          </div>
+
+    </div>
+
+
+
+     <!-- Footer -->
+     <br>
+     <br>
+     <hr class="line" />
+     <footer class="footer">
+       <div class="wrapperfooter">
+         <div class="footer12">
+           <img
+             src="img/1576d021e1c899f0b0cbeecc0232d524-removebg-preview.png"
+             alt=""
+           />
+           <div class="detail">
+             <h2>OUR LOCATION</h2>
+             <p>Gairidhara, Nepal</p>
+           </div>
+         </div>
+         <div class="footer1">
+           <img
+             src="img/82-829521_phone-icon-image-phone-white-transparent-icon-removebg-preview.png"
+             alt=""
+           />
+           <div class="detail">
+             <h2>CONTACT NUMBER</h2>
+             <p>+977 9823095678</p>
+           </div>
+         </div>
+         <div class="footer1">
+           <img src="img/mail-removebg-preview.png" alt="" />
+           <div class="detail">
+             <h2>OUR EMAIL</h2>
+             <p>info@chimpvine.com</p>
+           </div>
+         </div>
+         <div class="footer12">
+           <img
+             src="img/book-internet-icon-white-11562892132afi42kloxz-removebg-preview.png"
+             alt=""
+           />
+           <div class="detail">
+             <h2>OUR WEBSITE</h2>
+             <p>https://np.chimpvine.com/</p>
+           </div>
+         </div>
+       </div>
+     </footer>
+   </div>
+ </div>
+  <div class="button">
+    <button><a href="index.html"><img src="img/Red_X.svg.png" alt="" /></button></a>
+  </div>
+  <div class="button2">
+      <button><a href="index.html"><img src="img/icons8-home-50.png" alt=""></button></a>
+  </div>
+  <div class="button3">
+      <button><a href="options.html">Back</button></a>
+  </div>
+
+    <script>
+      const searchParams = new URLSearchParams(
+    window.location.search
+    )
+    const title = searchParams.get("title") 
+    const grade = searchParams.get("grade") 
+    const titleEL = document.querySelector("#title") 
+    titleEL.innerHTML =`${title}` 
+    const gradeEL = document.querySelector("#grade") 
+    gradeEL.innerHTML =`Grade: ${grade}` 
+    </script>
+    
+</body>
+</html>

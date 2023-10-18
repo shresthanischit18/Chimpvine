@@ -1,3 +1,7 @@
+/*
+ */
+
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slider img');
 const paginationButtons = document.querySelectorAll('.pagination-btn');
